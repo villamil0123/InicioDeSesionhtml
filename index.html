@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+      <form action="" method="post">
+        <h1>Inicio de sesion</h1>
+        <h2 class="info"required>Correo electronico</h2>
+        <input type="email" placeholder="email@dominio.com">
+        <h2 class="info">Contraseña</h2>
+        <p></p>
+        <input type="password" id="contra">
+
+        <div class="botones">
+          <button type="submit" name="button" class="boton">Ingresar</button>
+        </div>
+
+      </form>
+
+        <h5 class="otros">¿No tienes una cuenta? <a href="register.html" style="color: #e3702e;">Regístrate aquí</a></h5>
+        
+</div>
+<!--VENTANA EMERGENTE-->
+<div class="modal-overlay" id="my-modal-overlay" style="display: none;">
+    <div class="modal-container">
+      <div class="modal-content">
+        <button onclick="closeModal('my-modal-overlay')" class="modal-close">×</button>
+        <h1 class="modal-titulo">CONTRASENA INCORRECTA</h1>
+        <img src="img/undraw_Forgot_password_re_hxwm.png" alt="Modal Image" class="modal-image"/>
+        <p class="modal-text">Contraseña incorrecta vuelva a intentarlo.</p>
+      </div>
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+ 
+</html>
